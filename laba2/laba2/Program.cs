@@ -62,10 +62,8 @@ namespace laba2
 
         public static void Main()
         {			
-			//string path1 = Console.ReadLine();
-			//string path2 = Console.ReadLine();
-			string path1 = "/Users/gadfly/Desktop/BSUIR.3.5/СПП/Выполненные лабы/catalog1";
-			string path2 = "/Users/gadfly/Desktop/BSUIR.3.5/СПП/Выполненные лабы/catalog";
+			string path1 = Console.ReadLine();
+			string path2 = Console.ReadLine();
 
 			string[] filesFromFirstDir  =  Directory.GetFiles(path1, "*", SearchOption.AllDirectories);
 			string[] filesFromSecDir    =  Directory.GetFiles(path2, "*", SearchOption.AllDirectories);
