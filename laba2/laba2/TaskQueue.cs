@@ -15,13 +15,13 @@ namespace laba2
 
 		public TaskQueue(int threadsCount)
 		{
+			threadsCount = Math.Abs(threadsCount);
+			
 			if (threadsCount == 0)
 			{
 				threadsCount = 1;
 			}
-            
-			threadsCount = Math.Abs(threadsCount);
-
+    
 			for (int i = 0; i < threadsCount; i++)
 			{
 				Thread thread = new Thread(ThreadProc);
